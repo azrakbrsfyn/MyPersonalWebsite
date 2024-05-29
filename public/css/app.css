@@ -1,0 +1,128 @@
+:root {
+    --clr-orange: #F25739;
+    --clr-orange-darker:#b84028;
+    --clr-dark: #082032;
+    --clr--dark-secondary: #2C394B;
+    --clr--dark-third:#334756;
+  }
+
+* {
+    font-family: "Montserrat", sans-serif !important;
+    color: #fff;
+}
+
+h1 {
+    font-weight: bold !important;
+}
+
+.bg-dark {
+    background-color: var(--clr-dark) !important;
+}
+
+.bg-dark-2{
+    background-color: var(--clr--dark-secondary);
+}
+
+.bg-dark-3{
+    background-color: var(--clr--dark-third);
+}
+
+.btn-secondary {
+    background-color: transparent !important; /* Mengubah warna latar belakang menjadi transparan */
+    border: 1px solid var(--clr-orange); /* Menetapkan ketebalan dan warna garis tepi */
+    color: var(--clr-orange) !important; /* Mengubah warna teks */
+}
+
+.btn-secondary:hover {
+    background-color: var(--clr-orange) !important; /* Mengubah warna latar belakang menjadi oranye saat dihover */
+    border-color: var(--clr-orange); /* Optional: Menyesuaikan warna garis tepi saat dihover */
+    color: #fff !important; /* Optional: Mengubah warna teks menjadi putih saat dihover */
+}
+
+.btn-primary {
+    background-color: var(--clr-orange) !important;
+    border-color: var(--clr-orange);
+    transition: .5s;
+}
+
+.btn-primary:hover{
+    background-color: var(--clr-orange-darker) !important;
+    border-color: var(--clr-orange-darker);
+}
+
+
+.container-full-bg{
+    background-image: url('../img/background.jpg'); /* Ganti 'path/to/your/image.jpg' dengan path gambar yang ingin digunakan */
+    background-size: cover; /* Untuk memastikan gambar mengisi seluruh area container */
+    background-position: center; /* Untuk mengatur posisi gambar agar selalu berada di tengah */
+    background-repeat: no-repeat; /* Untuk menghindari pengulangan gambar jika container lebih besar dari gambar */
+    height: 60vh; /* Untuk mengisi tinggi container dengan tinggi viewport */
+    color: #fff; /* Warna teks yang kontras dengan latar belakang */
+    position: relative;
+}
+
+.mask {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+
+.rounded-circle {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+span {
+    color: var(--clr-orange);
+}
+
+.heading-text{
+    font-weight: bolder;
+}
+
+.introduction{
+    color: #fff;
+}
+
+.card {
+    background-color: var(--clr--dark-third) !important;
+    transition: .5s;
+}
+
+.img-card {
+    height: 18vw;
+    object-fit: cover;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 0px 26px -6px var(--clr-dark) !important;
+    -webkit-box-shadow: 2px 0px 26px -6px var(--clr-dark) !important;
+    -moz-box-shadow: 2px 0px 26px -6px var(--clr-dark) !important;
+}
+
+.card-title {
+    font-weight: bold !important;
+}
+
+.tools-list img{
+    width: 50px;
+}
+
+.tools-list {
+    transition: .5s;
+}
+
+.tools-list:hover{
+    transform: translateY(-4px);
+}
+
+.reach-contact{
+    transition: .5s;
+}
+
+.reach-contact:hover{
+    transform: translateY(-4px);
+}
